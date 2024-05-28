@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  transition: 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-position: top;
+  position: absolute;
+  top: -70px;
+  transition: top 0.3s ease;
+}
+
+#header.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.footbal-img {
+  content: url(Image/FOOTBALL.png);
+}
+
+.all-game-image:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.all-game-image:not(:hover) {
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.thethao {
+  background-image: url("./Image/THETHAO.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.btn {
+  background-image: url("./Image/LowBtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.btn2 {
+  background-image: url("./Image/Low2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.btn2:hover {
+  background-image: url("./Image/bright2.png");
+}
+
+.btn:hover {
+  background-image: url("./Image/brightBtn.png");
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background: #191b23;
+}
+
+input:focus {
+  outline: none;
+}
+
+.footer2 li {
+  border-color: rgba(201, 75, 75, 0.5);
+}
+
+.signup-btn {
+  color: #facc15;
+  text-align: center;
+  position: relative;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  color: #ffffff;
+  transform: scale(1.06);
+  transition: 0.2s;
+}
+
+.signup-btn:not(:hover),
+.login-btn:not(:hover) {
+  color: #facc15;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.center-btn:hover {
+  color: #ffffff;
+  transform: scale(1.06);
+  transition: 0.2s;
+}
+.center-btn:not(:hover) {
+  color: #facc15;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.btn--shockwave.is-active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50px;
+  -webkit-animation: shockwave 1s 0.5s ease-out infinite;
+  animation: shockwave 1s 0.5s ease-out infinite;
+}
+
+.btn--shockwave.is-active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50px;
+  -webkit-animation: shockwave 1s 0.65s ease-out infinite;
+  animation: shockwave 1s 0.65s ease-out infinite;
+}
+
+.btn--shockwave.is-active {
+  -webkit-animation: shockwaveJump 1s ease-out infinite;
+  animation: shockwaveJump 1s ease-out infinite;
+}
+
+@-webkit-keyframes shockwaveJump {
+  0% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+
+  40% {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+
+  50% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  55% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+
+  60% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes shockwaveJump {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+
+  50% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+
+  55% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+
+  60% {
+    /* -webkit-transform:scale(0.98); */
+    /* transform:scale(0.98); */
+  }
+
+  100% {
+    /* -webkit-transform:scale(1); */
+    /* transform:scale(1); */
+  }
+}
+
+@-webkit-keyframes shockwave {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.15),
+      inset 0 0 2px rgba(255, 255, 255, 0.15);
+  }
+
+  95% {
+    box-shadow: 0 0 4px #ffffff, inset 0 0 4px #ffffff;
+  }
+
+  100% {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
+
+@keyframes shockwave {
+  0% {
+    -webkit-transform: scale(1);
+    box-shadow: 0 0 2px rgba(250, 202, 70, 0.65),
+      inset 0 0 1px rgba(250, 202, 70, 0.95);
+  }
+
+  95% {
+    box-shadow: 0 0 16px rgba(250, 202, 70, 0.15),
+      inset 0 0 16px rgba(250, 202, 70, 0.15);
+  }
+
+  100% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    transition: 0.3s;
+    background-color: rgba(19, 19, 19, 0.8);
+  }
+
+  .footbal-img {
+    content: url(Image/FOOTBALL2.png);
+  }
+
+  .menu-box {
+    background-color: rgba(252, 243, 243, 0.93);
+  }
+
+  .menu li {
+    padding: 10px 10px;
+    border-bottom: 0.2px solid rgb(186, 170, 170, 0.5);
+    width: 100%;
+  }
+
+  .menu li a {
+    color: gray;
+  }
+
+  .hide-button {
+    transition: 0.5s;
+  }
+
+  #menu-contain {
+    height: 100vh;
+    position: absolute;
+    width: 85%;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+  }
+}
